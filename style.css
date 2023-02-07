@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-over-text {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  font-size: 40px;
+  top: 20%;
+  left: 0%;
+  /* transform: translate(-750%, -700%); */
+  color: white;
+  text-align: center;
+  background-color: rgba(16, 15, 15, 0.8);
+  width: 40vw;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  z-index: 1;
+}
+.left-content > img {
+  position: relative;
+  width: 40vw;
+  height: 100vh;
+}
+
+.right-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 60vw;
+  margin: 0;
+  background-color: hsl(0, 0%, 0%);
+}
+.right-content .description p {
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding: 40px;
+  color: lightslategray;
+  font-weight: 800px;
+  width: 0 auto;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  box-shadow: 0px 10px 20px 3px rgb(75, 26, 62);
+  padding: 40px 20px;
+  background-color: rgba(16, 15, 15, 0.85);
+}
+
+.form-title {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 10px;
+  color: lightslategray;
+}
+
+.userInput {
+  display: flex;
+  flex-flow: column wrap;
+  width: 60%;
+  padding: 10px 10px;
+}
+
+.userInput > label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(119, 136, 153);
+  padding-bottom: 4px;
+}
+.userInput > input {
+  border: 2px solid lightslategray;
+  background-color: rgba(16, 15, 15, 0.85);
+  color: lightslategray;
+  border-radius: 4px;
+}
+
+.userInput > input:hover {
+  border: 2px solid rgb(75, 26, 62);
+}
+
+.userInput > input:focus {
+  border: 2px solid rgb(52, 142, 222);
+}
+
+.error {
+  color: red;
+}
+
+.userInput > input.error {
+  border: 1px solid red;
+  color: red;
+}
+
+.createAccount > button {
+  border-radius: 4px;
+  padding: 10px 30px;
+  font-weight: 700;
+  color: rgb(75, 26, 62);
+  border: 4px solid rgb(75, 26, 62);
+  border-radius: 4px;
+  background-color: rgba(16, 15, 15, 0.85);
+}
+
+.createAccount > button:hover {
+  background-color: rgb(75, 26, 62);
+  color: rgba(16, 15, 15, 0.85);
+}
+
+footer {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 40px;
+  color: lightslategray;
+}
+
+footer a {
+  color: rgb(75, 26, 62);
+  font-weight: 800;
+}
